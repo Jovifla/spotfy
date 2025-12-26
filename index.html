@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocador de musica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="music-container">
+    <h4 id="title-playlist">PlayList TOP 10</h4>
+   <img id='cover'alt="Disc cover."></img>
+<div id="below-cover">
+    <div id="info-music">
+    <div id="som-name" class="light-color">Nome da Musica</div>
+    <div id="banda-name" class="light-color">Nome da Banda</div>
+</div>
+    <button id="curtida" class="button light-color"><i class="bi bi-hand-thumbs-up"></i></button>
+</div>
+    <div id="progress-bar">
+    <div id="current-progress"></div>
+    </div>
+</div>
+<div id="button-container">
+    <button id="shuffle" class="button"><i class="bi bi-shuffle"></i></button>
+    <button id="previous" class="button button-navigate"><i class="bi bi-caret-left-square"></i></button>
+    <button id="play" class="button button-biggest"><i class="bi bi-play-btn-fill"></i></button>
+    <button id="next" class="button button-navigate"><i class="bi bi-caret-right-square"></i></button>
+    <button id="repeat" class="button"><i class="bi bi-repeat"></i></button>
+    <audio id="audio"></audio>
+    <script src="script.js"></script>
+</div>
+</div>
+</body>
+</html>

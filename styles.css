@@ -1,0 +1,115 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Fundo bem escuro */
+    color: #ffffff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+/* Estilizando a parte superior do player */
+.music-container {
+    background-color: #181818; /* Cinza do card */
+    width: 350px;
+    padding: 20px 20px 0 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-playlist {
+    color: #b3b3b3;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#cover {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Mantém a imagem quadrada */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+#below-cover {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#som-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#banda-name {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+/* Barra de Progresso */
+#progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #4f4f4f;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#current-progress {
+    height: 100%;
+    background-color: #1db954; /* Verde Spotify */
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
+
+/* Container dos botões (parte inferior) */
+#button-container {
+    background-color: #181818;
+    width: 350px;
+    padding: 10px 30px 30px 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.button:hover {
+    color: #ffffff;
+}
+
+.button-biggest {
+    font-size: 3rem;
+    color: #ffffff;
+}
+}
